@@ -1,0 +1,17 @@
+.vscode
+.DS_Store
+.idea/
+.temp/
+.eslintcache
+
+build/
+dist/
+lib/
+coverage/
+node_modules/
+
+template.yml
+
+package-lock.json
+yarn.lock
+ No newline at end of file

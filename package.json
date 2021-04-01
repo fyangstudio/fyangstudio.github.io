@@ -1,0 +1,21 @@
+{
+  "name": "fyangstudio.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyangstudio/fyangstudio.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fyangstudio/fyangstudio.github.io/issues"
+  },
+  "homepage": "https://github.com/fyangstudio/fyangstudio.github.io#readme",
+  "dependencies": {
+    "markdown-it-multimd-table": "^4.0.3",
+    "vuepress": "^1.8.2"
+  }
+}
