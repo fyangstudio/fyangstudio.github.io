@@ -27,3 +27,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           BRANCH: master
+          FOLDER: docs/.vuepress/dist
