@@ -5,9 +5,19 @@ const matter = require('gray-matter');
 
 const CATALOG_CONFIG = [
   {
-    dirname: 'others',
-    title: '其他',
+    dirname: 'guide',
+    title: '使用指南',
     order: 3
+  },
+  {
+    dirname: 'more',
+    title: '附加说明',
+    order: 4
+  },
+  {
+    dirname: 'vscode',
+    title: 'VS Code 指南',
+    order: 5
   }
 ];
 

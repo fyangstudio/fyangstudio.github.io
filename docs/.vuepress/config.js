@@ -11,8 +11,15 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Rax', link: 'https://rax.alibaba-inc.com/' },
-      { text: 'ICE', link: 'https://ice.alibaba-inc.com/' },
+      ,
+      {
+        text: '其它',
+        ariaLabel: 'Menu',
+        items: [
+          { text: 'Rax', link: 'https://rax.alibaba-inc.com/' },
+          { text: 'ICE', link: 'https://ice.alibaba-inc.com/' },
+        ]
+      }
     ],
     sidebar: getSidebar(),
   }
