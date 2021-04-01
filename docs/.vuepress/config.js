@@ -1,6 +1,5 @@
 module.exports = {
   title: 'Iceworks',
-  dest: 'public',
   markdown: {
     lineNumbers: true,
     extendMarkdown: md => {
