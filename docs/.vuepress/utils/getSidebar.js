@@ -14,7 +14,7 @@ const CATALOG_CONFIG = [
 const BASE_PATH = path.join(__dirname, '../../');
 
 function getMarkdownOrder(filename) {
-  return (matter(fs.readFileSync(path.join(BASE_DIR, filepath), 'utf-8')).data || {}).order;
+  return (matter(fs.readFileSync(path.join(BASE_PATH, filename), 'utf-8')).data || {}).order;
 }
 
 function compareOrder(a, b) {
@@ -63,4 +63,4 @@ function getSidebar() {
   return result;
 }
 
-module.exports = genSidebar;
+module.exports = getSidebar;
