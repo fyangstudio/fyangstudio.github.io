@@ -1,14 +1,4 @@
-
-const path = require('path');
-const genSidebar = require('./utils/genSidebar');
-const filehelper = require('./utils/initPage.js');
-
-const rootpath = path.dirname(__dirname);
-
-function concatJs() {
-  const arr = genSidebar('JavaScript', filehelper.getFileName(rootpath), false);
-  return arr;
-}
+const getSidebar = require('./utils/getSidebar');
 
 module.exports = {
   title: 'Iceworks',
@@ -24,6 +14,6 @@ module.exports = {
       { text: 'Rax', link: 'https://rax.alibaba-inc.com/' },
       { text: 'ICE', link: 'https://ice.alibaba-inc.com/' },
     ],
-    sidebar: concatJs(),
+    sidebar: getSidebar(),
   }
 }
