@@ -11,7 +11,6 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      ,
       {
         text: '其它',
         ariaLabel: 'Menu',

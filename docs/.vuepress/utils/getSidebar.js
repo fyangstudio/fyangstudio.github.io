@@ -39,10 +39,12 @@ function getSidebar() {
 
   const docs = glob.sync('**/*.md', { cwd: BASE_PATH, ignore: 'README.md' });
 
+  // 整理数据结构
   docs.forEach((doc) => {
     const dirname = path.parse(doc).dir;
     const catalog = CATALOG_CONFIG.find(config => config.dirname === dirname);
     if (dirname && catalog) {
+      // 将说有目录下文档 合成一个对象
       const catalogItem = result.find(item => item.dirname === dirname);
       if (!catalogItem) {
         result.push({
@@ -59,8 +61,9 @@ function getSidebar() {
     }
   });
 
+  // 排序最顶层侧边栏
   result.sort(compareOrder);
-
+  // 排序目录下侧边栏
   result.forEach((item) => {
     if (item.dirname) {
       item.children.sort(compareOrder);
