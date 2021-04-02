@@ -19,4 +19,5 @@ markdown 格式的文档内容
 ```
 
 平台侧支持了 order 配置，其他同 [VuePress](https://www.vuepress.cn/)
+
 配置目录文件夹侧边栏，请见 `docs/.vuepress/utils/getSidebar.js`
